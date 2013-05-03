@@ -39,3 +39,36 @@ C:\Users\trmixson\Documents\Visual Studio 2010\Projects\TankGame\TankGame\TankGa
 C:\Users\trmixson\Documents\Visual Studio 2010\Projects\TankGame\TankGame\TankGame\bin\x86\Debug\Content\body_tex.bmp_0.xnb
 C:\Users\trmixson\Documents\Visual Studio 2010\Projects\TankGame\TankGame\TankGame\bin\x86\Debug\Content\barrel_tex.bmp_0.xnb
 C:\Users\trmixson\Documents\Visual Studio 2010\Projects\TankGame\TankGame\TankGame\bin\x86\Debug\Content\minigunShort.xnb
+C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Debug\Content\cube.xnb
+C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Debug\Content\testBox.xnb
+C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Debug\Content\blueBox.xnb
+C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Debug\Content\brownBox.xnb
+C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Debug\Content\greenBox.xnb
+C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Debug\Content\orangeBox.xnb
+C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Debug\Content\whiteBox.xnb
+C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Debug\Content\tank.xnb
+C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Debug\Content\InstancedEffect.xnb
+C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Debug\Content\gameFont.xnb
+C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Debug\Content\barrel_tex.bmp.xnb
+C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Debug\Content\body_tex.bmp.xnb
+C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Debug\Content\turret_tex.bmp.xnb
+C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Debug\Content\minigunShort.xnb
+C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Debug\Content\red_0.xnb
+C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Debug\Content\blue_0.xnb
+C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Debug\Content\brown_0.xnb
+C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Debug\Content\green_0.xnb
+C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Debug\Content\orange_0.xnb
+C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Debug\Content\white_0.xnb
+C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Debug\Content\turret_tex.bmp_0.xnb
+C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Debug\Content\body_tex.bmp_0.xnb
+C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Debug\Content\barrel_tex.bmp_0.xnb
+C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Debug\TankGame.exe
+C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Debug\TankGame.pdb
+C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Debug\BEPUphysics.dll
+C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Debug\BEPUphysicsDrawer.dll
+C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Debug\BEPUphysics.xml
+C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Debug\BEPUphysicsDrawer.pdb
+C:\dev\git-repos\TankGame\TankGame\TankGame\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\dev\git-repos\TankGame\TankGame\TankGame\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\dev\git-repos\TankGame\TankGame\TankGame\obj\x86\Debug\TankGame.exe
+C:\dev\git-repos\TankGame\TankGame\TankGame\obj\x86\Debug\TankGame.pdb

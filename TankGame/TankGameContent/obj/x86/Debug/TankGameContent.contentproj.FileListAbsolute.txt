@@ -1,2 +1,3 @@
 C:\Users\Mazer\Documents\Visual Studio 2010\Projects\TankGame\TankGame\TankGameContent\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\trmixson\Documents\Visual Studio 2010\Projects\TankGame\TankGame\TankGameContent\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\dev\git-repos\TankGame\TankGame\TankGameContent\obj\x86\Debug\ResolveAssemblyReference.cache
