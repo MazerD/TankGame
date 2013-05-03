@@ -3,6 +3,23 @@ TankGame
 
 A Tank Game
 
+Ports
+Server Find Broadcasts: 11500
+Remote Player -> Server: 11501
+Server -> Remote Player: 11502
+
+Server Search
+Ping?
+
+Server Response
+YODAWGIHEARDYOULIKETANKS
+
+Player Register
+TANKS::MyIP::MyPort?::PlayerName
+
+Input Packet Format
+PlayerID::ControlType::
+Pad -- LeftStick
 
 Program Flow (Networking)
 

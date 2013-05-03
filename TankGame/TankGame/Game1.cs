@@ -229,6 +229,8 @@ namespace TankGame
     /// </summary>
     public class Game1 : Microsoft.Xna.Framework.Game
     {
+        // Game State Variables
+
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         SpriteFont spriteFont;
@@ -286,6 +288,11 @@ namespace TankGame
 
         bool nuke = false;
         bool building = false;
+
+        // 0 == local only, 1 == client, 2 == host
+        public int serverMode;
+
+
 
 //#if XBOX360
         /// <summary>
@@ -843,6 +850,19 @@ namespace TankGame
             if (padState2.Triggers.Right < 0.99f)
                 gunLoop2.Stop();
             #endregion
+
+            // 486 URGENT
+            // Check for new messages from remote clients
+            //  possible messages:
+            //      routine input update; gamepad stick state, etc.
+            //      fire control: shoot main turret, fire minigun burst
+            //      specials: fire jump jets, etc.
+            // read from the single 'server input receiver' udpclient
+
+
+
+            // send out updates to each remote client
+            // generate list to send then loop through remote clients passing data packet to each one
 
             //Steps the simulation forward one time step.
             space.Update();
