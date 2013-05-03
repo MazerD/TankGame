@@ -1,0 +1,8 @@
+C:\Users\trmixson\Documents\Visual Studio 2010\Projects\BEPUphysics_ab1ef8bee1f9\BEPUphysicsDrawer\bin\x86\Debug\BEPUphysicsDrawer.dll
+C:\Users\trmixson\Documents\Visual Studio 2010\Projects\BEPUphysics_ab1ef8bee1f9\BEPUphysicsDrawer\bin\x86\Debug\BEPUphysicsDrawer.pdb
+C:\Users\trmixson\Documents\Visual Studio 2010\Projects\BEPUphysics_ab1ef8bee1f9\BEPUphysicsDrawer\bin\x86\Debug\BEPUphysics.dll
+C:\Users\trmixson\Documents\Visual Studio 2010\Projects\BEPUphysics_ab1ef8bee1f9\BEPUphysicsDrawer\bin\x86\Debug\BEPUphysics.pdb
+C:\Users\trmixson\Documents\Visual Studio 2010\Projects\BEPUphysics_ab1ef8bee1f9\BEPUphysicsDrawer\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\trmixson\Documents\Visual Studio 2010\Projects\BEPUphysics_ab1ef8bee1f9\BEPUphysicsDrawer\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\trmixson\Documents\Visual Studio 2010\Projects\BEPUphysics_ab1ef8bee1f9\BEPUphysicsDrawer\obj\x86\Debug\BEPUphysicsDrawer.dll
+C:\Users\trmixson\Documents\Visual Studio 2010\Projects\BEPUphysics_ab1ef8bee1f9\BEPUphysicsDrawer\obj\x86\Debug\BEPUphysicsDrawer.pdb
