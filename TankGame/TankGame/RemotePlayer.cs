@@ -20,10 +20,13 @@ namespace TankGame
         public RemotePlayer(IPAddress ip, int port, string name)
         {
             // create endpoint from IP and port
+            endpoint = new IPEndPoint(ip, port);
 
             // create udpclient from endpoint
+            client = new UdpClient(endpoint);
 
             // store player name
+            playerName = name;
         }
 
         // attempts to read from the udpclient to get new control input from the remote player's client

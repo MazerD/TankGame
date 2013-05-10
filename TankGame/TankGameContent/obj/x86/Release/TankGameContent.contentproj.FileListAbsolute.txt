@@ -1,0 +1,1 @@
+C:\dev\git-repos\TankGame\TankGame\TankGameContent\obj\x86\Release\ResolveAssemblyReference.cache

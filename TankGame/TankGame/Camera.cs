@@ -122,8 +122,8 @@ namespace TankGame
             Pitch += Game.GamePadState.ThumbSticks.Right.Y * 1.5f * dt;
 #else
             //Turn based on mouse input.
-            Yaw += (200 - Game.MouseState.X) * dt * .12f;
-            Pitch += (200 - Game.MouseState.Y) * dt * .12f;
+            //Yaw += (200 - Game.MouseState.X) * dt * .12f;
+            //Pitch += (200 - Game.MouseState.Y) * dt * .12f;
 #endif
             Mouse.SetPosition(200, 200);
 

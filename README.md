@@ -3,19 +3,27 @@ TankGame
 
 A Tank Game
 
+This project is a VS2010 XNA Game Studio 4.0 project using C#.
+It makes extensive use of the BEPUPhysics library for physics handling
+in the game engine, which may require some additional configuration to run.
+The required .dll is included in the project directories but may need to be
+located somewhere on the system (I set that up originally over a year ago..)
+
+BEPU Physics website:
+http://bepuphysics.codeplex.com/
+
+BEPU uses the Apache 2.0 software license.
+
 Ports
 Server Find Broadcasts: 11500
 Remote Player -> Server: 11501
 Server -> Remote Player: 11502
 
-Server Search
-Ping?
-
-Server Response
-YODAWGIHEARDYOULIKETANKS
+Server Search: "TankGameServerFind"
+Server Response: "TankGameServerResponse"
 
 Player Register
-TANKS::MyIP::MyPort?::PlayerName
+PlayerRegister::MyIP::MyPort?::PlayerName
 
 Input Packet Format
 PlayerID::ControlType::

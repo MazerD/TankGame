@@ -24,6 +24,10 @@ using BEPUphysics.Constraints.SingleEntity;
 using BEPUphysics.OtherSpaceStages;
 using BEPUphysics.Constraints.TwoEntity.Joints;
 using BEPUphysicsDrawer.Models;
+using System.Net;
+using System.Net.Sockets;
+using System.Text;
+using System.Threading;
 
 
 
@@ -289,9 +293,19 @@ namespace TankGame
         bool nuke = false;
         bool building = false;
 
+        // 486
+        // New variables used for networking
+
         // 0 == local only, 1 == client, 2 == host
         public int serverMode;
 
+        // Listen for connection searches on port 11500, input on port 11501
+        public UdpClient connectionHandler, inputListener, transmitter;
+        // Transmission back to remotes is handled by udpclient in the RemotePlayer instance
+
+        private LinkedList<RemotePlayer> remotes;
+
+        public IPEndPoint server, connectionHandlerEP;
 
 
 //#if XBOX360
@@ -330,6 +344,25 @@ namespace TankGame
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
+
+            // 486
+            // Prompt for host / server / local only mode
+            //Console.WriteLine("Choose a game mode.\n1: Host a network game.\n2: Join a network game.\n3: Play local only.\n");
+            serverMode = 0;
+
+            remotes = new LinkedList<RemotePlayer>();
+
+            //while ((serverMode != 0) && (serverMode != 1) && (serverMode != 2))
+            //{
+            //    KeyboardState = Keyboard.GetState();
+            //    if (KeyboardState.IsKeyDown(Keys.NumPad1))
+            //        serverMode = 0;
+            //    else if (KeyboardState.IsKeyDown(Keys.D2))
+            //        serverMode = 1;
+            //    else if (KeyboardState.IsKeyDown(Keys.D3))
+            //        serverMode = 2;
+            //}
+
 
             //Create the cameras.
             Camera = new Camera(this, new Vector3(0, 3, 40), 5);
@@ -695,7 +728,7 @@ namespace TankGame
 //            GamePadState = GamePad.GetState(0);
 //#else
             KeyboardState = Keyboard.GetState();
-            MouseState = Mouse.GetState();
+            //MouseState = Mouse.GetState();
 //#endif
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed
@@ -712,8 +745,8 @@ namespace TankGame
             padState2 = GamePad.GetState(PlayerIndex.Two);
 
             //Feed padStates to the tanks.
-            tank.padState = padState;
-            tank2.padState = padState2;
+            tank2.padState = padState;
+            //tank2.padState = padState2;
 
             //Run tank-specific update methods; check for death, apply spring forces, etc.
             tank.Update(gameTime);
@@ -721,22 +754,34 @@ namespace TankGame
 
             #region FIRE CONTROL
             //This can all move to the tank class once Cannon(), Minigun() etc move there
-            if (!padState.IsConnected && KeyboardState.IsKeyDown(Keys.Space))
+            //if (!padState.IsConnected && KeyboardState.IsKeyDown(Keys.Space))
+            //    tank.primed = true;
+            //if (padState.IsConnected && padState.Triggers.Left > 0.5f)
+            //    tank.primed = true;
+            //else if (((KeyboardState.IsKeyUp(Keys.Space) && !padState.IsConnected) || (padState.Triggers.Left < 0.5f && padState.IsConnected)) && tank.primed)
+            //    Cannon(tank);
+
+            if (KeyboardState.IsKeyDown(Keys.Space))
                 tank.primed = true;
-            if (padState.IsConnected && padState.Triggers.Left > 0.5f)
-                tank.primed = true;
-            else if (((KeyboardState.IsKeyUp(Keys.Space) && !padState.IsConnected) || (padState.Triggers.Left < 0.5f && padState.IsConnected)) && tank.primed)
+            else if (tank.primed)
                 Cannon(tank);
+            if (padState.IsConnected && padState.Triggers.Left > 0.5f)
+                tank2.primed = true;
+            else if (tank2.primed)
+                Cannon(tank2);
 
             if (padState2.IsConnected && padState2.Triggers.Left > 0.5f)
                 tank2.primed = true;
             else if ((padState2.Triggers.Left < 0.5f && padState2.IsConnected) && tank2.primed)
                 Cannon(tank2);
 
-            if ((padState.Triggers.Right > 0.99f) && (tank.gunCD < 1))
-                Minigun(tank);
+            if ((padState.Triggers.Right > 0.99f) && (tank2.gunCD < 1))
+                Minigun(tank2);
 
-            if (!padState.IsConnected && KeyboardState.IsKeyDown(Keys.Enter))
+            //if (!padState.IsConnected && KeyboardState.IsKeyDown(Keys.Enter))
+            //    Minigun(tank);
+
+            if (KeyboardState.IsKeyDown(Keys.Enter))
                 Minigun(tank);
 
             if ((padState2.Triggers.Right > 0.99f) && (tank2.gunCD < 1))
@@ -771,6 +816,77 @@ namespace TankGame
                 boom = new Explosion(new Vector3(0, 3.0f, 0), 1000000000f, 1000f, space);
                 boom.Explode();
             }
+            #endregion
+
+
+            #region NetworkControls
+
+            // 486 Add Network Connection Controls
+            // Yeah, it's an awful solution but it works for now.
+
+            // Only do these checks if the network connection hasn't been established
+            if (serverMode == -1)
+            {
+                if (KeyboardState.IsKeyDown(Keys.RightShift) && KeyboardState.IsKeyDown(Keys.D2))
+                {
+                    // Set up as a host
+                    Console.WriteLine("I'm a server!\n");
+                    serverMode = 2;
+                    // Establish listening ports
+                    connectionHandler = new UdpClient(11500);
+                    inputListener = new UdpClient(11501);
+                    // Create list for storing connected players
+                    //remotes = new LinkedList<RemotePlayer>();
+                }
+
+                if (KeyboardState.IsKeyDown(Keys.RightShift) && KeyboardState.IsKeyDown(Keys.D1))
+                {
+                    // Set up connection to a server
+                    Console.WriteLine("I'm a client!\n");
+                    serverMode = 1;
+                    connectionHandler = new UdpClient(11500);
+                    connectionHandler.EnableBroadcast = true;
+                    connectionHandler.Send(Encoding.ASCII.GetBytes("TankGameServerFind"),18,new IPEndPoint(IPAddress.Broadcast,11500));
+                    string serverResponse = "";
+                    IPEndPoint responder = new IPEndPoint(IPAddress.Any, 11500);
+                    //int i = 0;
+                    while (!serverResponse.Contains("TankGameServerResponse"))
+                    {
+                        //i++;
+                        //Thread.Sleep(1000);
+                        serverResponse = Encoding.ASCII.GetString(connectionHandler.Receive(ref responder));
+                        //if (i == 6)
+                        //{
+                        //    // Failed to connect, reset serverMode to -1
+                        //    serverMode = -1;
+                        //}
+                    }
+                    server = responder;
+                    transmitter = new UdpClient(server);
+                }
+            }
+
+            #endregion
+
+            #region NetworkUpdates
+
+            // 486
+            // If server:
+            //  send updates to remotes
+            //  read input from remotes
+            // If client:
+            //  listen for updates from server
+
+            if (serverMode == 1)
+            {
+                // Do client stuff
+            }
+            else if (serverMode == 2)
+            {
+                // Do server stuff
+                connectionHandler.BeginReceive(HandleNewPlayer, new object());
+            }
+
             #endregion
 
             #region DEBUGGING CONTROLS
@@ -868,6 +984,23 @@ namespace TankGame
             space.Update();
 
             base.Update(gameTime);
+        }
+
+        // Input / Output update functions
+
+        public void HandleNewPlayer(IAsyncResult result)
+        {
+            connectionHandlerEP = new IPEndPoint(IPAddress.Any, 11500);
+            Byte[] recvBytes = connectionHandler.EndReceive(result, ref connectionHandlerEP);
+
+            string recvd = Encoding.ASCII.GetString(recvBytes);
+
+            if (recvd.Contains("PlayerRegister::"))
+            {
+                string[] registration = recvd.Split("::".ToCharArray());
+                remotes.AddLast(new RemotePlayer(connectionHandlerEP.Address, connectionHandlerEP.Port, registration[8]));
+                Console.WriteLine("Registered new player: " + registration[8]);
+            }
         }
 
         /// <summary>
@@ -994,6 +1127,27 @@ namespace TankGame
                 spriteBatch.DrawString(spriteFont, text, new Vector2(1025, 33), Color.White);
                 spriteBatch.DrawString(spriteFont, text, new Vector2(1024, 32), Color.Blue);
             }
+
+            if (serverMode == 0)
+            {
+                text = "Network Mode: Local\nRemote Players: " + remotes.Count.ToString();
+                spriteBatch.DrawString(spriteFont, text, new Vector2(768, 9), Color.White);
+                spriteBatch.DrawString(spriteFont, text, new Vector2(767, 8), Color.Orange);
+            }
+            else if (serverMode == 1)
+            {
+                text = "Network Mode: Client\nRemote Players: " + remotes.Count.ToString();
+                spriteBatch.DrawString(spriteFont, text, new Vector2(768, 9), Color.White);
+                spriteBatch.DrawString(spriteFont, text, new Vector2(767, 8), Color.Orange);
+            }
+            else if (serverMode == 2)
+            {
+                text = "Network Mode: Host\nRemote Players: " + remotes.Count.ToString();
+                spriteBatch.DrawString(spriteFont, text, new Vector2(768, 9), Color.White);
+                spriteBatch.DrawString(spriteFont, text, new Vector2(767, 8), Color.Orange);
+            }
+
+
 
 
             spriteBatch.End();
