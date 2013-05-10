@@ -305,7 +305,7 @@ namespace TankGame
 
         private LinkedList<RemotePlayer> remotes;
 
-        public IPEndPoint server, connectionHandlerEP;
+        public IPEndPoint server, connectionHandlerEP, inputListenerEP;
 
 
 //#if XBOX360
@@ -880,11 +880,16 @@ namespace TankGame
             if (serverMode == 1)
             {
                 // Do client stuff
+                Byte[] sendBytes = Encoding.ASCII.GetBytes("Steve::Cannon");    // placeholder, just triggers the cannon fire repeatedly
+                //int count = Encoding.ASCII.GetByteCount("Steve::Cannon");
+                // send packet to the server via 'transmitter' which got bound to the IP that responded to our Server Search broadcast
+                transmitter.Send(sendBytes,sendBytes.Length);
             }
             else if (serverMode == 2)
             {
                 // Do server stuff
                 connectionHandler.BeginReceive(HandleNewPlayer, new object());
+                inputListener.BeginReceive(ReceiveClientUpdate, new Object());
             }
 
             #endregion
@@ -967,7 +972,7 @@ namespace TankGame
                 gunLoop2.Stop();
             #endregion
 
-            // 486 URGENT
+            // 486
             // Check for new messages from remote clients
             //  possible messages:
             //      routine input update; gamepad stick state, etc.
@@ -984,9 +989,12 @@ namespace TankGame
             space.Update();
 
             base.Update(gameTime);
+
         }
 
-        // Input / Output update functions
+        #region Net Code
+
+        // Callback functions for asynchronous UDP reception
 
         public void HandleNewPlayer(IAsyncResult result)
         {
@@ -1002,6 +1010,23 @@ namespace TankGame
                 Console.WriteLine("Registered new player: " + registration[8]);
             }
         }
+
+        public void ReceiveClientUpdate(IAsyncResult result)
+        {
+            inputListenerEP = new IPEndPoint(IPAddress.Any, 11501);
+            Byte[] recvBytes = inputListener.EndReceive(result, ref inputListenerEP);
+
+            string recvd = Encoding.ASCII.GetString(recvBytes);
+
+            if (recvd.Contains("InputMessage::"))
+            {
+                string[] inputMsg = recvd.Split("::".ToCharArray());
+                // handle input data
+                
+            }
+        }
+
+        #endregion
 
         /// <summary>
         /// This is called when the game should draw itself.

@@ -7,11 +7,11 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\cube.xnb</Output>
-      <Time>2009-07-15T09:12:44-05:00</Time>
+      <Output>E:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\cube.xnb</Output>
+      <Time>2013-05-10T11:46:43.509588-05:00</Time>
       <Dependency>
         <Key>obj\x86\Release\cube_0.xml</Key>
-        <Value>2013-05-09T16:17:37.9364994-05:00</Value>
+        <Value>2013-05-10T13:07:07.2164882-05:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -20,13 +20,13 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\testBox.xnb</Output>
-      <Time>2012-04-19T15:38:12.5211905-05:00</Time>
+      <Output>E:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\testBox.xnb</Output>
+      <Time>2013-05-10T11:46:43.7206001-05:00</Time>
       <Dependency>
         <Key>obj\x86\Release\testBox_0.xml</Key>
-        <Value>2013-05-09T16:17:38.1355108-05:00</Value>
+        <Value>2013-05-10T13:07:07.4144996-05:00</Value>
       </Dependency>
-      <Request>C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\red_0.xnb</Request>
+      <Request>E:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\red_0.xnb</Request>
     </Item>
     <Item>
       <Source>blueBox.fbx</Source>
@@ -34,13 +34,13 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\blueBox.xnb</Output>
-      <Time>2012-04-19T15:49:34.282185-05:00</Time>
+      <Output>E:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\blueBox.xnb</Output>
+      <Time>2013-05-10T11:46:43.4985874-05:00</Time>
       <Dependency>
         <Key>obj\x86\Release\blueBox_0.xml</Key>
-        <Value>2013-05-09T16:17:38.3075207-05:00</Value>
+        <Value>2013-05-10T13:07:07.6265117-05:00</Value>
       </Dependency>
-      <Request>C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\blue_0.xnb</Request>
+      <Request>E:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\blue_0.xnb</Request>
     </Item>
     <Item>
       <Source>brownBox.fbx</Source>
@@ -48,13 +48,13 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\brownBox.xnb</Output>
-      <Time>2012-04-20T09:10:35.7430624-05:00</Time>
+      <Output>E:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\brownBox.xnb</Output>
+      <Time>2013-05-10T11:46:43.5045877-05:00</Time>
       <Dependency>
         <Key>obj\x86\Release\brownBox_0.xml</Key>
-        <Value>2013-05-09T16:17:38.3895254-05:00</Value>
+        <Value>2013-05-10T13:07:07.7065163-05:00</Value>
       </Dependency>
-      <Request>C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\brown_0.xnb</Request>
+      <Request>E:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\brown_0.xnb</Request>
     </Item>
     <Item>
       <Source>greenBox.fbx</Source>
@@ -62,13 +62,13 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\greenBox.xnb</Output>
-      <Time>2012-04-19T15:51:26.2445889-05:00</Time>
+      <Output>E:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\greenBox.xnb</Output>
+      <Time>2013-05-10T11:46:43.526589-05:00</Time>
       <Dependency>
         <Key>obj\x86\Release\greenBox_0.xml</Key>
-        <Value>2013-05-09T16:17:38.4835307-05:00</Value>
+        <Value>2013-05-10T13:07:07.7915211-05:00</Value>
       </Dependency>
-      <Request>C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\green_0.xnb</Request>
+      <Request>E:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\green_0.xnb</Request>
     </Item>
     <Item>
       <Source>orangeBox.fbx</Source>
@@ -76,13 +76,13 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\orangeBox.xnb</Output>
-      <Time>2012-04-19T15:53:29.0486129-05:00</Time>
+      <Output>E:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\orangeBox.xnb</Output>
+      <Time>2013-05-10T11:46:43.6995989-05:00</Time>
       <Dependency>
         <Key>obj\x86\Release\orangeBox_0.xml</Key>
-        <Value>2013-05-09T16:17:38.5725358-05:00</Value>
+        <Value>2013-05-10T13:07:07.8695256-05:00</Value>
       </Dependency>
-      <Request>C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\orange_0.xnb</Request>
+      <Request>E:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\orange_0.xnb</Request>
     </Item>
     <Item>
       <Source>whiteBox.fbx</Source>
@@ -90,13 +90,13 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\whiteBox.xnb</Output>
-      <Time>2012-04-19T15:51:48.8418814-05:00</Time>
+      <Output>E:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\whiteBox.xnb</Output>
+      <Time>2013-05-10T11:46:43.7616024-05:00</Time>
       <Dependency>
         <Key>obj\x86\Release\whiteBox_0.xml</Key>
-        <Value>2013-05-09T16:17:38.662541-05:00</Value>
+        <Value>2013-05-10T13:07:07.9595307-05:00</Value>
       </Dependency>
-      <Request>C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\white_0.xnb</Request>
+      <Request>E:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\white_0.xnb</Request>
     </Item>
     <Item>
       <Source>tank.fbx</Source>
@@ -104,15 +104,15 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\tank.xnb</Output>
-      <Time>2012-04-22T22:37:04-05:00</Time>
+      <Output>E:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\tank.xnb</Output>
+      <Time>2013-05-10T11:46:43.7196-05:00</Time>
       <Dependency>
         <Key>obj\x86\Release\tank_0.xml</Key>
-        <Value>2013-05-09T16:17:38.8175498-05:00</Value>
+        <Value>2013-05-10T13:07:08.1175398-05:00</Value>
       </Dependency>
-      <Request>C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\turret_tex.bmp_0.xnb</Request>
-      <Request>C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\body_tex.bmp_0.xnb</Request>
-      <Request>C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\barrel_tex.bmp_0.xnb</Request>
+      <Request>E:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\turret_tex.bmp_0.xnb</Request>
+      <Request>E:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\body_tex.bmp_0.xnb</Request>
+      <Request>E:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\barrel_tex.bmp_0.xnb</Request>
     </Item>
     <Item>
       <Source>InstancedEffect.fx</Source>
@@ -120,8 +120,8 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\InstancedEffect.xnb</Output>
-      <Time>2012-03-09T02:54:48.3469748-06:00</Time>
+      <Output>E:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\InstancedEffect.xnb</Output>
+      <Time>2013-05-10T11:46:43.474586-05:00</Time>
     </Item>
     <Item>
       <Source>gameFont.spritefont</Source>
@@ -129,8 +129,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\gameFont.xnb</Output>
-      <Time>2010-09-13T11:40:50-05:00</Time>
+      <Output>E:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\gameFont.xnb</Output>
+      <Time>2013-05-10T11:46:43.5135882-05:00</Time>
     </Item>
     <Item>
       <Source>barrel_tex.bmp.png</Source>
@@ -138,8 +138,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\barrel_tex.bmp.xnb</Output>
-      <Time>2012-04-24T03:17:29.6552176-05:00</Time>
+      <Output>E:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\barrel_tex.bmp.xnb</Output>
+      <Time>2013-05-10T11:46:43.491587-05:00</Time>
     </Item>
     <Item>
       <Source>body_tex.bmp.png</Source>
@@ -147,8 +147,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\body_tex.bmp.xnb</Output>
-      <Time>2012-04-24T03:17:57.9768375-05:00</Time>
+      <Output>E:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\body_tex.bmp.xnb</Output>
+      <Time>2013-05-10T11:46:43.5015875-05:00</Time>
     </Item>
     <Item>
       <Source>turret_tex.bmp.png</Source>
@@ -156,8 +156,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\turret_tex.bmp.xnb</Output>
-      <Time>2012-04-24T03:18:22.5112408-05:00</Time>
+      <Output>E:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\turret_tex.bmp.xnb</Output>
+      <Time>2013-05-10T11:46:43.7586022-05:00</Time>
     </Item>
     <Item>
       <Source>minigunShort.wav</Source>
@@ -165,22 +165,22 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\minigunShort.xnb</Output>
-      <Time>2012-04-26T09:04:16.4286635-05:00</Time>
+      <Output>E:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\minigunShort.xnb</Output>
+      <Time>2013-05-10T11:46:43.5335894-05:00</Time>
     </Item>
     <Item>
       <Source>cube.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Release\cube_0.xml</Output>
-      <Time>2009-07-15T09:12:44-05:00</Time>
+      <Time>2013-05-10T11:46:43.509588-05:00</Time>
     </Item>
     <Item>
       <Source>testBox.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Release\testBox_0.xml</Output>
-      <Time>2012-04-19T15:38:12.5211905-05:00</Time>
+      <Time>2013-05-10T11:46:43.7206001-05:00</Time>
     </Item>
     <Item>
       <Source>red.png</Source>
@@ -195,15 +195,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\red_0.xnb</Output>
-      <Time>2012-04-19T15:42:49.8840548-05:00</Time>
+      <Output>E:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\red_0.xnb</Output>
+      <Time>2013-05-10T11:46:43.7175999-05:00</Time>
     </Item>
     <Item>
       <Source>blueBox.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Release\blueBox_0.xml</Output>
-      <Time>2012-04-19T15:49:34.282185-05:00</Time>
+      <Time>2013-05-10T11:46:43.4985874-05:00</Time>
     </Item>
     <Item>
       <Source>blue.png</Source>
@@ -218,15 +218,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\blue_0.xnb</Output>
-      <Time>2012-04-19T15:47:06.8057499-05:00</Time>
+      <Output>E:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\blue_0.xnb</Output>
+      <Time>2013-05-10T11:46:43.4975873-05:00</Time>
     </Item>
     <Item>
       <Source>brownBox.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Release\brownBox_0.xml</Output>
-      <Time>2012-04-20T09:10:35.7430624-05:00</Time>
+      <Time>2013-05-10T11:46:43.5045877-05:00</Time>
     </Item>
     <Item>
       <Source>brown.png</Source>
@@ -241,15 +241,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\brown_0.xnb</Output>
-      <Time>2012-04-20T09:08:53.2070884-05:00</Time>
+      <Output>E:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\brown_0.xnb</Output>
+      <Time>2013-05-10T11:46:43.5035876-05:00</Time>
     </Item>
     <Item>
       <Source>greenBox.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Release\greenBox_0.xml</Output>
-      <Time>2012-04-19T15:51:26.2445889-05:00</Time>
+      <Time>2013-05-10T11:46:43.526589-05:00</Time>
     </Item>
     <Item>
       <Source>green.png</Source>
@@ -264,15 +264,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\green_0.xnb</Output>
-      <Time>2012-04-19T15:47:54.0474519-05:00</Time>
+      <Output>E:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\green_0.xnb</Output>
+      <Time>2013-05-10T11:46:43.5245889-05:00</Time>
     </Item>
     <Item>
       <Source>orangeBox.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Release\orangeBox_0.xml</Output>
-      <Time>2012-04-19T15:53:29.0486129-05:00</Time>
+      <Time>2013-05-10T11:46:43.6995989-05:00</Time>
     </Item>
     <Item>
       <Source>orange.png</Source>
@@ -287,15 +287,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\orange_0.xnb</Output>
-      <Time>2012-04-19T15:48:02.2789227-05:00</Time>
+      <Output>E:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\orange_0.xnb</Output>
+      <Time>2013-05-10T11:46:43.6985988-05:00</Time>
     </Item>
     <Item>
       <Source>whiteBox.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Release\whiteBox_0.xml</Output>
-      <Time>2012-04-19T15:51:48.8418814-05:00</Time>
+      <Time>2013-05-10T11:46:43.7616024-05:00</Time>
     </Item>
     <Item>
       <Source>white.png</Source>
@@ -310,15 +310,15 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\white_0.xnb</Output>
-      <Time>2012-04-19T15:47:34.4683321-05:00</Time>
+      <Output>E:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\white_0.xnb</Output>
+      <Time>2013-05-10T11:46:43.7596023-05:00</Time>
     </Item>
     <Item>
       <Source>tank.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Release\tank_0.xml</Output>
-      <Time>2012-04-22T22:37:04-05:00</Time>
+      <Time>2013-05-10T11:46:43.7196-05:00</Time>
     </Item>
     <Item>
       <Source>turret_tex.bmp.png</Source>
@@ -333,8 +333,8 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\turret_tex.bmp_0.xnb</Output>
-      <Time>2012-04-24T03:18:22.5112408-05:00</Time>
+      <Output>E:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\turret_tex.bmp_0.xnb</Output>
+      <Time>2013-05-10T11:46:43.7586022-05:00</Time>
     </Item>
     <Item>
       <Source>body_tex.bmp.png</Source>
@@ -349,8 +349,8 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\body_tex.bmp_0.xnb</Output>
-      <Time>2012-04-24T03:17:57.9768375-05:00</Time>
+      <Output>E:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\body_tex.bmp_0.xnb</Output>
+      <Time>2013-05-10T11:46:43.5015875-05:00</Time>
     </Item>
     <Item>
       <Source>barrel_tex.bmp.png</Source>
@@ -365,8 +365,8 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\barrel_tex.bmp_0.xnb</Output>
-      <Time>2012-04-24T03:17:29.6552176-05:00</Time>
+      <Output>E:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\barrel_tex.bmp_0.xnb</Output>
+      <Time>2013-05-10T11:46:43.491587-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -374,10 +374,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Release</BuildConfiguration>
       <CompressContent>true</CompressContent>
-      <RootDirectory>C:\dev\git-repos\TankGame\TankGame\TankGameContent\</RootDirectory>
-      <LoggerRootDirectory>C:\dev\git-repos\TankGame\TankGame\TankGame\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\dev\git-repos\TankGame\TankGame\TankGameContent\obj\x86\Release\</IntermediateDirectory>
-      <OutputDirectory>C:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\</OutputDirectory>
+      <RootDirectory>E:\dev\git-repos\TankGame\TankGame\TankGameContent\</RootDirectory>
+      <LoggerRootDirectory>E:\dev\git-repos\TankGame\TankGame\TankGame\</LoggerRootDirectory>
+      <IntermediateDirectory>E:\dev\git-repos\TankGame\TankGame\TankGameContent\obj\x86\Release\</IntermediateDirectory>
+      <OutputDirectory>E:\dev\git-repos\TankGame\TankGame\TankGame\bin\x86\Release\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -406,7 +406,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2012-03-09T02:40:04.2110048-06:00</Value>
+        <Value>2012-01-23T18:21:46.2451933-06:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

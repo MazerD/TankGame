@@ -3,7 +3,7 @@
   <Asset Type="Graphics:MeshContent">
     <Name>Cube</Name>
     <Identity>
-      <SourceFilename>C:\dev\git-repos\TankGame\TankGame\TankGameContent\brownBox.fbx</SourceFilename>
+      <SourceFilename>E:\dev\git-repos\TankGame\TankGame\TankGameContent\brownBox.fbx</SourceFilename>
       <SourceTool>FbxImporter</SourceTool>
     </Identity>
     <Transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Transform>
@@ -26,7 +26,7 @@
     <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
       <Name>Material__red_png</Name>
       <Identity>
-        <SourceFilename>C:\dev\git-repos\TankGame\TankGame\TankGameContent\brownBox.fbx</SourceFilename>
+        <SourceFilename>E:\dev\git-repos\TankGame\TankGame\TankGameContent\brownBox.fbx</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>
